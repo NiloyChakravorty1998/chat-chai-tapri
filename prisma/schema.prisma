@@ -10,12 +10,12 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+
 model Chat {
   id      Int      @id @default(autoincrement()) @map("ID")
   toUserId   String   @map("TO_USER_ID")
   fromUserId    String? @map("FROM_USER_ID")
   lastText String @map("LAST_TEXT")
   sentTimestamp DateTime @default(now()) @map("SENT_TIMEST")
-
   @@map("TAPRI_CHAT_DETAILS")
 }

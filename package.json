@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon build/server.js",
-    "start": "node build/server.js"
+    "dev": "nodemon build/server/app/server.js",
+    "start": "node build/server/app/server.js"
   },
   "keywords": [
     "chat",
@@ -34,6 +34,7 @@
     "morgan": "^1.10.0",
     "nodemon": "^3.0.1",
     "prisma": "^5.5.2",
-    "socket.io": "^4.7.2"
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2"
   }
 }
